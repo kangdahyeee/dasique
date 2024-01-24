@@ -221,6 +221,7 @@ div.swiper-button-next:after { color: #5E2E2E; position: absolute; top: 55%; rig
  #wrap header .headerInner ul.util li:nth-child(4) { display: block;} 
  #wrap header .headerInner ul.util li:nth-child(5) { display: block;} 
  #wrap header .headerInner nav.pcmenu ul.nav-list { display: none; } 
+ #wrap header .headerBar .smenu_bar {  display: none !important;} /* 추가 */
  #wrap header .headerBar .mobileMenu { display: block; } 
  #wrap header .headerBar .mobileMenu span a img { position: absolute; top: 80px; left: -16px; } 
  #wrap header .headerBar .mobileMenu span a img:hover { opacity: 0.7; } 
