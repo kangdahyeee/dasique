@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 강다혜-데이지크 </title>
+    <link href="./images/favicon.ico" rel="shortcut icon" />
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <!-- 메인 스와이퍼 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- best slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- 신제품슬릭 -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <!-- 메인 스와이퍼 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- best slide -->
+    <script type="text/JavaScript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- 신제품슬릭 -->
+    <script src="js/slick.1.9.0.min.js"></script>
+	<script src="js/slick-animation.min.js"></script>
+    <script src="./js/dasiqueMain.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- ============================= 
+        header 
+        ============================== -->
+        <header>
+            <div class="headerBar">
+                <div class="headerInner">
+                    <h1 class="logo">
+                        <a href="#"><img src="./images/main_logo.png" alt="로고"></a>
+                    </h1>
+                    <div class="headerSearch">
+                     <!-- 검색 입력창 -->
+                     <div class="search_box">
+                        <input type="search" id="searchInput">
+                        <!-- 검색 버튼 -->
+                        <button onclick="search()" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <ul class="util">
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">JOIN US</a></li>
+                        <li><a href="#"><i class="fa-light fa-cart-shopping"></i>BAG(0)</a></li>
+                        <li><a href="#"><i class="fa-light fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-light fa-cart-shopping"></i>(0)</a></li>   
+                    </ul>
+                    <!-- pc menu -->
+                    <nav class="pcmenu">
+                        <ul id="menu" class="nav-list">
+                            <li>
+                                <a href="#">ABOUT US</a>
+                                <ul class="submenu">
+                                    <li><a href="#">BRAND STORY</a></li>
+                                    <li><a href="#">LOCATION</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">SHOP ALL</a>
+                                <ul class="submenu">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">EYE</a></li>
+                                    <li><a href="#">LIP</a></li>
+                                    <li><a href="#">BLUSH</a></li>
+                                    <li><a href="#">NAIL</a></li>
+                                    <li><a href="#">BASE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">COLLECTION</a>
+                            </li>
+                            <li>
+                                <a href="#">BOARD</a>
+                                <ul class="submenu">
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">Q&amp;A</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">REVIEW</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- mobile -->
+                    <div class="mobileMenu">
+                        <!-- 햄버거버튼 -->
+                        <span class="toggleBtn" onclick="openNav()">
+                            <a href="#"><img src="./images/togglebtn.svg" alt="모바일토글버튼"></a>
+                        </span>
+                        <!-- 전체메뉴박스 -->
+                        <div id="myNav" class="overlay">
+                            <div class="menuBox">
+                                <!-- 닫기버튼 -->
+                                <a href="#" class="closeBtn" onclick="closeNav()"><img src="./images/closebtn.svg" alt="모바일닫기버튼"></a>
+                                <div class="member">
+                                    <p>데이지크의 다양한 멤버십 혜택을 누려보세요.</p>
+                                    <div class="mLogin">    
+                                    <a href="#">로그인</a>
+                                    <a href="#"><img src="./images/arrowIcon.svg" alt="로그인화살표"></a>
+                                    </div>
+                                </div>
+                                <!-- 모바일 메뉴 -->
+                                <div class="overlay-content">
+                                    <ul>    
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">SHOP ALL</a></li>
+                                        <li><a href="#">COLLECTION</a></li>
+                                        <li><a href="#">BOARD</a></li>
+                                        <li><a href="#">REVIEW</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- pc submenu bg -->
+                </div>
+                <div class="smenu_bar"></div>
+            </div>
+        </header>
+        <!-- ============================= 
+        main
+        ============================== -->
+        <main>
+            <div class="mainInner">
+                <!-- section - main_visual -->
+                <section class="main_visual">
+                    <h2 class="blind">main_visual</h2>
+                    <div class="swiper mySwiper">
+                        <!-- main slide -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                        <!-- 인디케이터 - 점 3ea -->
+                        <div class="swiper-pagination slides-pagenation"></div>
+                        <!-- 이전,다음버튼 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </section>
+                <!-- section - bestSeller -->
+                <section class="bestseller">
+                    <div class="bestsellerInner">
+                        <div class="sectionTitle showBox">
+                            <h2>BEST SELLER</h2>
+                            <span><i class="fa-sharp fa-regular fa-plus"></i>more</span>
+                        </div>
+                    </div> 
+                    <div class="bestItemBg">
+                        <div class="bestsellerInner2">
+                            <div class="bestItemLayout">
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide bestItem1">
+                                            <!-- 1 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem1.jpg" alt="베스트셀러1"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>섀도우 팔레트 23 썸머 코랄</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">34,000원</span>
+                                                            <span >27,200원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">20%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem2">
+                                            <!-- 2 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem2.jpg" alt="베스트셀러2"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>블렌딩 무드 치크 10 뮤티드 넛츠</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">24,000원</span>
+                                                            <span>19,200원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">20%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem3">
+                                            <!-- 3 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem3.jpg" alt="베스트셀러3"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>프루티 립 잼</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">17,000원</span>
+                                                            <span>11,900원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">30%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem4">
+                                            <!-- 4 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem4.jpg" alt="베스트셀러4"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>[피카소 기획] 무드 업 마스카라</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">19,000원</span>
+                                                            <span>15,200원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">20%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem5">
+                                            <!-- 5 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem5.jpg" alt="베스트셀러5"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>[홀리데이 컬렉션] 쥬시 듀이 틴트</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">17,000원</span>
+                                                            <span>11,900원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">30%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem6">
+                                            <!-- 6 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem6.png" alt="베스트셀러6"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>무드 슬림 라이너</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">13,000원</span>
+                                                            <span>9,100원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">30%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide bestItem7">
+                                            <!-- 7 -->
+                                            <div class="bestItem">
+                                                <div class="bestItemInner">
+                                                    <a href="#"><img src="./images/bestitem7.jpg" alt="베스트셀러7"></a>
+                                                    <div class="bestproduct">
+                                                        <h3>스탈릿 글리터 파우더</h3>
+                                                        <p class="price">
+                                                            <span class="nomalprice">12,000원</span>
+                                                            <span>9,600원</span>
+                                                        </p>
+                                                        <div class="saleIcon">sale</div>
+                                                        <div class="saleIcon">20%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- section - rollbanner -->
+                <section class="rollbanner">
+                    <h2 class="blind">rollbanner</h2>
+                    <ul>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                        <li><span>dasique</span></li>
+                    </ul>
+                </section>
+                <!-- section - newArrival  -->
+                <section class="newArrival">
+                    <div class="newArrivalInner">
+                        <div class="sectionTitle showBox">
+                        <h2>NEW ARRIVAL</h2>
+                        <span><i class="fa-sharp fa-regular fa-plus"></i>more</span>
+                        </div>
+                        <div class="inner_new">
+                        <!-- 이전, 다음버튼 -->
+                        <div class="tab_btn">
+                            <ul>
+                                <li class="active"><div id="prevBtn"><i class="fa-regular fa-chevron-left"></i></div></li>
+                                <li><div id="nextBtn"><i class="fa-regular fa-chevron-right"></i></div></li>
+                            </ul> 
+                        </div>
+                        <div class="tabs">
+                        <!-- ======== tab menu 1 ======== -->
+                        <div class="tab active">
+                            <div class="slider">
+                                <div class="newLayout">
+                                    <div class="new_main1"><a href="#"><img src="./images/new_main1.gif" alt="신제품메인이미지1"></a></div>
+                                    <div class="mobile_new_main1"><a href="#"><img src="./images/mNewmain1.jpg" alt="모바일신제품메인이미지1"></a></div>
+                                    <div class="newitemsLayout">
+                                        <!-- 1 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival1.jpg" alt="신제품1"></a>
+                                                <div class="newproduct">
+                                                    <h3>[아이스크림 컬렉션] 섀도우 팔레트</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">34,000원</span>
+                                                        <span>27,200원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">20%</div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival2.jpg" alt="신제품2"></a>
+                                                <div class="newproduct">
+                                                    <h3>[아이스크림 컬렉션] 블렌딩 무드 치크</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">24,000원</span>
+                                                        <span>19,200원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">20%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival3.jpg" alt="신제품3"></a>
+                                                <div class="newproduct">
+                                                    <h3>[아이스크림 컬렉션] 쥬시 듀이 틴트</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">17,000원</span>
+                                                        <span>11,900원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">30%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 4 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival4.png" alt="신제품4"></a>
+                                                <div class="newproduct">
+                                                    <h3>[1+1] 스탈릿 쥬얼 리퀴드 글리터</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">30,000원</span>
+                                                        <span>15,000원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">1+1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======== tab menu 2 ======== -->
+                        <div class="tab">
+                            <div class="slider">
+                                <div class="newLayout">
+                                    <div class="new_main1"><a href="#"><img src="./images/new_main2.jpg" alt="신제품메인이미지2"></a></div>
+                                    <div class="mobile_new_main1" ><a href="#"><img src="./images/mNewmain2.jpg" alt="모바일신제품메인이미지2"></a></div>
+                                    <div class="newitemsLayout">
+                                        <!-- 1 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival5.jpg" alt="신제품5"></a>
+                                                <div class="newproduct">
+                                                    <h3>섀도우 팔레트 18 베리스무디</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">34,000원</span>
+                                                        <span>27,200원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">20%</div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival6.jpg" alt="신제품6"></a>
+                                                <div class="newproduct">
+                                                    <h3>블렌딩 무드 치크 06 베리스무디</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">24,000원</span>
+                                                        <span>19,200원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">20%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival7.jpg" alt="신제품7"></a>
+                                                <div class="newproduct">
+                                                    <h3>[아이스크림 컬렉션] 쥬시 듀이 틴트</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">17,000원</span>
+                                                        <span>11,900원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon">30%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 4 -->
+                                        <div class="newItem">
+                                            <div class="newItemInner">
+                                                <a href="#"><img src="./images/newarrival8.jpg" alt="신제품8"></a>
+                                                <div class="newproduct">
+                                                    <h3>시럽 네일 컬러</h3>
+                                                    <p class="price">
+                                                        <span class="nomalprice">12,000원</span>
+                                                        <span>8,900원</span>
+                                                    </p>
+                                                    <div class="saleIcon">sale</div>
+                                                    <div class="saleIcon blind">1+1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                        <!--// tabs  -->
+                    </div>                    
+                    </div>
+                </section>
+                <!-- section - rollbanner2 -->
+                <section class="rollbanner2">
+                    <h2 class="blind">rollbanner2</h2>
+                    <ul>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        <li><span>Scoop your favorite flavor!</span></li>
+                        <li><span>Smooth like butter, melting soft mood!</span></li>
+                        <li><span>Dew it! Juicy fruit</span></li>
+                        
+                    </ul>
+                </section>
+                <!-- section - collection -->
+                <section class="collection">
+                    <h2 class="blind">collection</h2>
+                    <div class="collectionInner">
+                        <div class="collectionItems">
+                            <div class="collectionTitle showBox">
+                                <h2>Holiday Collection</h2>
+                                <p class="viewBtn">VIEW COLLECTION</p>
+                            </div>
+                            <div class="collectionImg"><a href="#"><img src="./images/collection1.jpg" alt="컬렉션이미지1"></a></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section - video  -->
+                <section class="video">
+                    <h2 class="blind">video</h2>
+                    <div class="main-video section scroll-effect df-bannermanager df-bannermanager-main-video on">
+                        <div class="section__cont section__cont--banner">
+                            <div class="embed-container">
+                                <iframe id="player" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/Zas3ykalUmg?start=0&amp;autohide=0&amp;rel=0&amp;vq=hd1080&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;enablejsapi=1&amp;modestbranding=1;background-size:%20cover;%20background-position:center&amp;enablejsapi=1" data-gtm-yt-inspected-10="true" data-gtm-yt-inspected-25="true"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section - sns -->  
+                <section class="sns">
+                    <div class="snsInner">
+                        <div class="sectionTitle showBox">
+                            <h2>DASIQUE SNS</h2>
+                            <span><i class="fa-sharp fa-regular fa-plus"></i>바로가기</span>
+                        </div>
+                        <div class="snsLayout" >
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="./images/sns1.jpg" alt="sns이미지1">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns2.jpg" alt="sns이미지2">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns3.jpg" alt="sns이미지3">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns4.jpg" alt="sns이미지4">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns5.jpg" alt="sns이미지5">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns6.jpg" alt="sns이미지6">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns7.jpg" alt="sns이미지7">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns8.jpg" alt="sns이미지8">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/sns9.jpg" alt="sns이미지9">
+                                        <div class="textBox"><p class="snsText">dasique <br> instagram <br><img src="./images/arrowIcon.svg" alt="sns화살표"></p></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>   
+            </div>
+        </main>
+        <!-- ============================= 
+        footer
+        ============================== -->
+        <footer>
+            <div class="footerInner">
+                <div class="footer_logo"><a href="#"><img src="./images/footer_logo.png" alt="하단로고"></a></div>
+                <div class="fInner">
+                    <div class="fg1">
+                        <div class="ti_">CUSTOMER CENTER</div>
+                        <ul>   
+                            <li class="tel_">02-6959-3877</li>
+                            <li>OPENING HOURS : AM10-PM5 <br>
+                                LUNCH BREAK : PM12:30-PM1:30 <br>
+                                SAT, SUN OFF</li>
+                        </ul>
+                    </div>
+                    <div class="fg2">
+                        <div class="ti_">BANK INFO</div>
+                        <ul>
+                            <li>기업은행 588-036269-04-017</li>
+                            <li>예금주 : 주식회사 데이지크</li>
+                        </ul>
+                        <div class="ti2_">FOLLOW US</div>
+                        <ul class="sns_menu">
+                            <li><a href="https://www.instagram.com/dasique_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@dasique_official" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="https://www.youtube.com/@dasique8887" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="fg3">
+                        <div class="ti_">CONTACT US</div>
+                        <ul>
+                            <li>DOMESTIC SALES md@byecom.co.kr</li>
+                            <li>OVERSEAS SALES juhee.seo@byecom.co.kr</li>
+                            <li>MARKETING marketing@byecom.co.kr</li>
+                        </ul>
+                    </div>
+                    <div class="fg4">
+                        <ul class="utilMenu">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용안내</a></li>
+                        </ul>
+                        <ul>
+                            <li>COMPANY <span class="line_s"></span>(주) 데이지크</li>
+                            <li>OWNER & ADMIN <span class="line_s"></span>연정미, 이경재</li>
+                            <li>BUSINESS NO<span class="line_s"></span>769-86-01723</li>
+                            <li>ONLINE-ORDER NO<span class="line_s"></span>2020-서울강남-02057</li>
+                            <li>ADDRESS<span class="line_s"></span>서울특별시 강남구 테헤란로 513, 4층(삼성동, K타워)</li>
+                            <li>TEL<span class="line_s"></span>02-6959-3877</li>
+                            <li class="copy" style="margin-top:16px">Copyright &copy; dasique. All Rights Reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 최상단으로 올라가는 화살표 -->
+        <a href="#" class="btnTop">
+            <img src="./images/ico_ffooter_top.png" alt="하단화살표">
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        //swiper slide piugin
+        //.mySwiper에 슬라이드 적용
+        // 메인 슬라이드
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            //인디케이터
+            pagination: {
+                el: ".swiper-pagination", //표시할 요소 선택자
+                clickable: true, //버튼 클릭시 슬라이드 이동하도록 설정
+            },
+            // autoplay: {
+            //         delay: 2000, // 슬라이드 간의 간격을 밀리초 단위로 설정 (예: 2000 밀리초 = 2초)
+            //         disableOnInteraction: false, // 사용자 상호 작용 후에도 자동 슬라이드 계속
+            //     },
+        });
+
+
+        // 베스트셀러 슬라이드
+		var swiper = new Swiper(".mySwiper2", {
+            autoplay: true, // 자동재생 활성화 
+            autoplaySpeed: 1000,
+			mousewheel:true,
+            infinite: true, // 무한반복슬라이드
+			breakpoints: {
+				430: {
+					slidesPerView: 2,
+					// centeredSlides: true,
+					spaceBetween: 20,
+					loop:true,
+				},
+				760: {
+				  slidesPerView: 2,
+				  spaceBetween: 20,
+				},
+				900: {
+				  slidesPerView: 3,
+				  spaceBetween: 10,
+				},
+				1024: {
+				  slidesPerView: 3,
+				  spaceBetween:10,
+				},
+				1200: {
+				  slidesPerView: 4,
+				  spaceBetween:24,
+				},
+			},
+		});
+	
+        // =============등장액션: .showBox
+        const showBox = document.querySelectorAll(".showBox");
+
+        // 화면높이값 2/3 구하기
+        const screenH = window.innerHeight / 3 * 2;
+
+        // 현재 요소의 위치 (화면의 상단으로부터의 거리)를 반환하는 함수
+        const retVal = ele => ele.getBoundingClientRect().top;
+
+
+
+        //   등장 액션을 처리하는 함수
+        const showTit = x => {
+            // 현재 요소의 위치 (화면의 상단으로부터의 거리)를 가져옴
+            let xval = retVal(x);
+
+            // 만약 요소가 화면에 나타나는 중이라면
+            if (xval < screenH && xval > 0) {
+                // 요소가 화면에 나타날 때 opacity를 1로 변경하여 나타냄
+                x.classList.add("on");
+            }
+        };
+
+
+        window.addEventListener("scroll", () => {
+            // 스크롤 등장요소 개수만큼 for문 돌리기
+            for (let x of showBox) showTit(x);
+        });
+    </script>
+</body>
+</html>
